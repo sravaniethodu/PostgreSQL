@@ -16,13 +16,10 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
-- task: DownloadBuildArtifacts@1
+- task: PublishBuildArtifacts@1    
+  displayName: 'Publish Artifact: _sravaniethodu.PostgreSQL'
   inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'drop'
-    itemPattern: '**/*.zip'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    PathtoPublish: '$(Build._sravaniethodu.PostgreSQL)'
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
