@@ -15,7 +15,7 @@ public class InformationController : ControllerBase
         this.dataLayer = dataLayer;
     }
     /// <summary>
-    /// Finds the unique record using the id
+    /// Finds the unique record using the iddddd
     /// </summary>
     /// <param name="id">Id used to identify the tuple</param>
     /// <returns>Information pertaining to id</returns>
